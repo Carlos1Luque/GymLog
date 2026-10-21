@@ -1,0 +1,33 @@
+# Secrets / local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+secrets/
+credentials/
+appsettings.*.local.json
+
+# IDE / OS
+.vs/
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# .NET build outputs (Etapa 3)
+**/bin/
+**/obj/
+TestResults/
+artifacts/
+
+# Base de datos local (Etapa 3)
+*.sqlite
+
+# Node (si se usa en el frontend)
+node_modules/
+
+# Local agent settings (keep project skills/config versioned)
+.claude/settings.local.json

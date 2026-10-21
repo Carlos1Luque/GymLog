@@ -1,0 +1,12 @@
+# Normalizar finales de línea: el repositorio usa siempre LF.
+# Evita diferencias innecesarias entre Windows y otros sistemas.
+* text=auto eol=lf
+
+# Archivos binarios: sin conversión
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff2 binary
+*.pdf binary

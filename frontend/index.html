@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GymLog — registro personal de entrenamientos: ejercicios, series y repeticiones.">
+    <meta name="color-scheme" content="dark">
+    <title>GymLog — Registro de entrenamientos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="cabecera">
+        <div class="contenedor cabecera__contenido">
+            <a class="marca" href="index.html">Gym<span class="marca__destaque">Log</span></a>
+            <nav class="nav" aria-label="Navegación principal">
+                <ul class="nav__lista">
+                    <li><a class="nav__enlace nav__enlace--activo" href="#entrenamiento" aria-current="page">Entrenamiento</a></li>
+                    <li><a class="nav__enlace" href="#ejercicios">Ejercicios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h1 class="visualmente-oculto">GymLog — Registro de entrenamientos</h1>
+
+        <p class="aviso-demo" role="note">Vista de demostración de la Etapa 1: los botones son ilustrativos y todavía no realizan ninguna acción. No hay lógica, persistencia ni backend.</p>
+
+        <section id="entrenamiento" class="panel" aria-labelledby="titulo-entrenamiento">
+            <div class="panel__encabezado">
+                <div>
+                    <h2 id="titulo-entrenamiento">Entrenamiento de hoy</h2>
+                    <p class="panel__detalle">Sesión sin iniciar</p>
+                </div>
+                <button type="button" class="boton">Comenzar entrenamiento</button>
+            </div>
+            <div class="estado-vacio">
+                <p class="estado-vacio__titulo">No hay un entrenamiento en curso</p>
+                <p class="estado-vacio__texto">Cuando puedas iniciar una sesión, los ejercicios que vayas agregando aparecerán acá.</p>
+            </div>
+        </section>
+
+        <section id="ejercicios" class="panel" aria-labelledby="titulo-ejercicios">
+            <div class="panel__encabezado">
+                <div>
+                    <h2 id="titulo-ejercicios">Ejercicios, series y repeticiones</h2>
+                    <p class="panel__detalle">Así se verá cada ejercicio de la sesión</p>
+                </div>
+            </div>
+
+            <article class="ejercicio" aria-label="Ejemplo de ejercicio con series y repeticiones">
+                <div class="ejercicio__cabecera">
+                    <h3 class="ejercicio__nombre">Press de banca</h3>
+                    <span class="insignia">Ejemplo</span>
+                </div>
+                <ol class="series" aria-label="Series del ejercicio de ejemplo">
+                    <li class="serie">
+                        <span class="serie__numero">Serie 1</span>
+                        <span class="serie__detalle">10 repeticiones × 40 kg</span>
+                    </li>
+                    <li class="serie">
+                        <span class="serie__numero">Serie 2</span>
+                        <span class="serie__detalle">10 repeticiones × 40 kg</span>
+                    </li>
+                    <li class="serie serie--pendiente">
+                        <span class="serie__numero">Serie 3</span>
+                        <span class="serie__detalle">Pendiente</span>
+                    </li>
+                </ol>
+                <div class="ejercicio__acciones">
+                    <button type="button" class="boton boton--secundario">Agregar serie</button>
+                </div>
+            </article>
+
+            <div class="estado-vacio">
+                <p class="estado-vacio__titulo">Todavía no agregaste ejercicios a tu sesión</p>
+                <p class="estado-vacio__texto">La lista de tus ejercicios reales aparecerá en este espacio.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor">
+            <p>GymLog — registro personal de entrenamientos. Etapa 1: interfaz estática (HTML + CSS). Los botones son demostrativos; sin JavaScript, persistencia ni backend.</p>
+        </div>
+    </footer>
+</body>
+</html>
